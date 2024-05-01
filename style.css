@@ -28,23 +28,36 @@
 }
 body {
   font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  margin: 20px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
   font-weight: bold;
 }
 
-input {
-  padding: 5px;
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: calc(50% - 10px);
+}
+
+input[type="file"] {
   margin-bottom: 10px;
 }
 
 button {
-  padding: 8px 20px;
+  padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -54,3 +67,9 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+#compatibilityResult {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  }
